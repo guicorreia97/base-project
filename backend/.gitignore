@@ -35,9 +35,10 @@ coverage.xml
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# Environments
-.env
-.env.*
+# Environments not ignored on purpose (IGNORE THEM)
+# TODO: uncomment these lines.
+# .env
+# .env.*
 
 # Editor & IDE settings
 .idea/
