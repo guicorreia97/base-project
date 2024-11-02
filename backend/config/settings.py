@@ -1,11 +1,11 @@
 # app/core/config.py
 import os
 from pydantic_settings import BaseSettings
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 
 # Load the main .env file to get the APP_ENV variable for local development
-dotenv_path = find_dotenv()
-if dotenv_path:
+dotenv_path = os.path.join("config", ".env")
+if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 else:
     raise FileNotFoundError("Main .env file not found")
