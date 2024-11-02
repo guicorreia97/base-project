@@ -11,10 +11,11 @@ fastapi = "^0.115.3"
 uvicorn = "^0.32.0"
 python-dotenv = "^1.0.1"
 pydantic-settings = "^2.6.0"
+overrides = "^7.7.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-# [tool.poetry.scripts]
-# start = "uvicorn app.api.main:app --reload"
+[tool.poetry.scripts]
+start = "app.api.main:main"
